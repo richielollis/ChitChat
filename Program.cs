@@ -1,3 +1,5 @@
+using RouteSetter;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -17,6 +19,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+new SetupAPI(ref app, "Data Source=test.db");
 
 app.UseAuthorization();
 
