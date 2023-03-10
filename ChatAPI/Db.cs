@@ -25,7 +25,7 @@ namespace Db {
                 CREATE TABLE IF NOT EXISTS Messages
                 (id INTEGER PRIMARY KEY AUTOINCREMENT,
                  text VARCHAR(255),
-                 from VARCHAR(255),
+                 sender VARCHAR(255),
                  ts DATE)
                 ";
 
